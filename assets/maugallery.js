@@ -153,6 +153,8 @@
           index = i ;
         }
       });
+            // Ici se trouve le code permettant de passer à l'image précédente //
+
       next =
         imagesCollection[index] ||
         imagesCollection[imagesCollection.length - 1];
@@ -192,6 +194,7 @@
           index = i;
         }
       });
+      // Ici se trouve le code permettant de passer à l'image suivante //
       next = imagesCollection[index] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -240,7 +243,9 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+
+      // Bugg corrigé : On voit qu'il faut ajouter la class "active" //
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 
