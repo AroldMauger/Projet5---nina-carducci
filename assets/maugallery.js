@@ -156,7 +156,7 @@
             // Ici se trouve le code permettant de passer à l'image précédente //
 
       next =
-        imagesCollection[index] ||
+        imagesCollection[--index] ||
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -195,7 +195,7 @@
         }
       });
       // Ici se trouve le code permettant de passer à l'image suivante //
-      next = imagesCollection[index] || imagesCollection[0];
+      next = imagesCollection[++index] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     createLightBox(gallery, lightboxId, navigation) {
