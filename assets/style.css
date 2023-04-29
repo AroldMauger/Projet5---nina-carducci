@@ -85,14 +85,29 @@ body {
 	font-style: italic;
 	width: 60%;
 }
+@media (max-width: 1180px)   {
+	#description_nina {
+		width: 100%;
+
+	}
+}
+
+#description_nina {
+	font-family: 'Spectral';
+    font-weight: 800;
+    font-style: italic;
+	margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+	display: block;
+	
+}
+
 #about-me p {
 	width: 80%;
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
 .title{
 	text-align: center;
 	padding-block: 2em;
