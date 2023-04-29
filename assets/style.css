@@ -111,7 +111,9 @@ body {
 .title{
 	text-align: center;
 	padding-block: 2em;
+	font-size: calc(1.3rem + 0.6vw);
 }
+
 .gallery .nav {
 	justify-content: center;
 }
@@ -204,6 +206,20 @@ body {
 	justify-content: space-between;
 	z-index: 1;
 }
+
+#devis {
+	font-size: calc(1.3rem + 0.6vw);
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+@media (min-width: 1200px) {
+	#devis {
+	  font-size: 1.75rem;
+	}
+  }
 
 #contact {
 	margin: auto;
